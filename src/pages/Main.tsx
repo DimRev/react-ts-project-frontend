@@ -1,8 +1,8 @@
 function Main() {
   return (
-    <div>
+    <section className="app-main page-main">
       Main
-    </div>
+    </section>
   )
 }
 

@@ -1,8 +1,8 @@
 function Home() {
   return (
-    <div>
+    <section className="app-main page-home">
       Home
-    </div>
+    </section>
   )
 }
 

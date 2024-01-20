@@ -1,8 +1,8 @@
 function Header() {
   return (
-    <div>
+    <section className="app-header">
       Header
-    </div>
+    </section>
   )
 }
 

@@ -1,1 +1,23 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  position: relative;
+  background-color: pink;
+  height: 100dvh;
+}
 
+.app-header{
+  background-color: lightblue;
+  height: 48px;
+}
+
+.app-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background-color: lightblue;
+}

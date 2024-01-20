@@ -7,7 +7,7 @@ import About from './pages/About'
 
 function App() {
   return (
-    <>
+    <section className='app'>
       <Header />
       <Router>
         <Routes>
@@ -17,7 +17,7 @@ function App() {
         </Routes>
       </Router>
       <Footer />
-    </>
+    </section>
   )
 }
 

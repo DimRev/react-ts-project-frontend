@@ -1,8 +1,8 @@
 function About() {
   return (
-    <div>
+    <section className="app-main page-about">
       About
-    </div>
+    </section>
   )
 }
 
