@@ -1,3 +1,5 @@
+import { CtaOptionsList } from "../cmps/HomeCmps/CtaOptionsList"
+
 function Home() {
   return (
     <section className="app-main page-home main-layout">
@@ -8,7 +10,8 @@ function Home() {
         <h2>This is the Hero</h2>
       </section>
       <section className="home-cta">
-        <h2>Call to Actions</h2>
+        <h2>Register for the Service!</h2>
+        <CtaOptionsList />
       </section>
     </section>
   )

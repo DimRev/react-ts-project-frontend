@@ -1,9 +1,9 @@
 .page-home{
-  min-height: calc(100dvh - 48px - 48px);
-  overflow-y: scroll;
+  max-height: calc(100dvh - 48px - 48px);
+  overflow-y: auto;
 
   @media (width < 767px) {
-    min-height: calc(100dvh - 48px);
+    max-height: calc(100dvh - 48px);
   }
 
   .full-section{
