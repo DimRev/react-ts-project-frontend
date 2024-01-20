@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <section className="app-footer">
-      Footer
+      All rights reserved &copy;
     </section>
   )
 }

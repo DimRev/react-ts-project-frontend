@@ -1,0 +1,81 @@
+.mobile-menu-btn{
+  display: none;
+  @media (width < 767px) {
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 11;
+  }
+}
+
+.app-header {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr auto auto;
+
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, .3);
+
+  height: 48px;
+
+  padding: 0 1em;
+  gap: 1em;
+
+  .header-nav {
+    display: flex;
+    gap: 1em;
+  }
+
+  @media (width < 767px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+
+    height: 100%;
+    width: 300px;
+    animation: slideClose .5s ease;
+    animation-fill-mode: forwards;
+    &.open{
+      animation: slideOpen .5s ease;
+      animation-fill-mode: forwards;
+    }
+
+    padding: 1em 0;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+
+    .header-nav {
+      flex-direction: column;
+      width: 90%;
+      text-align: center;
+      & > * {
+        width: 100%;
+        border: 1px solid #eee;
+        padding: .3em .7em;
+        border-radius: 1000px;
+      }
+    }
+  }
+}
+
+@keyframes slideOpen {
+  from{
+    translate: 300px 0;
+  }
+  to{
+    translate: 0 0;
+  }
+}
+
+@keyframes slideClose {
+  from{
+    translate: 0 0;
+  }
+  to{
+    translate: 300px 0;
+  }
+}

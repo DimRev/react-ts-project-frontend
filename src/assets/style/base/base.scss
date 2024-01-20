@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -6,13 +10,8 @@ body{
   position: relative;
   background-color: pink;
   height: 100dvh;
+  overflow: hidden;
 }
-
-.app-header{
-  background-color: lightblue;
-  height: 48px;
-}
-
 .app-footer{
   position: absolute;
   bottom: 0;

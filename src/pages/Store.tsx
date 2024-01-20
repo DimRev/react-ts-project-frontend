@@ -1,9 +1,9 @@
-function Main() {
+function Store() {
   return (
     <section className="app-main page-main">
-      Main
+      Store
     </section>
   )
 }
 
-export default Main
+export default Store
