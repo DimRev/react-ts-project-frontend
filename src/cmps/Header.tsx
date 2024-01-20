@@ -7,7 +7,7 @@ function Header() {
   return (
     <>
       <button
-        className="mobile-menu-btn"
+        className={`mobile-menu-btn ${isMenuOpen ? 'open' : ''}`}
         onClick={() => {
           setIsMenuOpen((prev) => !prev)
         }}>

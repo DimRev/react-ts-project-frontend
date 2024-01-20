@@ -3,7 +3,12 @@
   @media (width < 767px) {
     display: block;
     position: absolute;
-    right: 1em;
+    right: 2em;
+    animation: slideBtnOpen .5s ease;
+    &.open{
+      animation: slideBtnClose .5s ease;
+      right: 1em;
+    }
     top: 1em;
     z-index: 11;
   }
@@ -77,5 +82,23 @@
   }
   to{
     translate: 300px 0;
+  }
+}
+
+@keyframes slideBtnClose {
+  from {
+    right: 2em
+  }
+  to{
+    right: 1em
+  }
+}
+
+@keyframes slideBtnOpen {
+  from {
+    right: 1em
+  }
+  to{
+    right: 2em
   }
 }

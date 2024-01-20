@@ -1,0 +1,13 @@
+.page-home{
+  min-height: calc(100dvh - 48px - 48px);
+  overflow-y: scroll;
+
+  @media (width < 767px) {
+    min-height: calc(100dvh - 48px);
+  }
+
+  .full-section{
+    background-color: green;
+    text-align: center;
+  }
+}

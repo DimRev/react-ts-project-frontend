@@ -1,8 +1,10 @@
 //BASE
 @import 'base/base.scss';
+@import 'base/layout.scss';
 @import 'base/mq.scss';
 
 //PAGES
+@import 'pages/HomePage.scss';
 
 //CMPS
 @import 'cmps/Header.scss';
