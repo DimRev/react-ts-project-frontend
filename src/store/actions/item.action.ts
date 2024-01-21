@@ -2,7 +2,7 @@ import { itemService } from "../../service/items.service.ts";
 import { ReducerItemType, ADD_ITEM, REMOVE_ITEM, SET_ITEMS, UPDATE_ITEM } from "../reducers/item.reducer.ts";
 import { store } from "../store.ts";
 
-
+type AddItemPayloadType = Omit<ReducerItemType, '_id'>
 
 export async function loadItems() {
   try {
@@ -13,7 +13,7 @@ export async function loadItems() {
   }
 }
 
-export async function addItem(item: ReducerItemType) {
+export async function addItem(item: AddItemPayloadType) {
   try {
     const itemToAdd = await itemService.save(item)
     store.dispatch(ADD_ITEM({ itemToAdd }))

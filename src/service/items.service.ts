@@ -28,14 +28,8 @@ export type ServiceItemType = {
   name: string;
 }
 
-type ServiceItemAddType = {
-  name: string;
-
-}
-type ServiceItemUpdateType = {
-  _id: string;
-  name: string;
-}
+type ServiceItemAddType = Omit<ServiceItemType, '_id'>
+type ServiceItemUpdateType = Required<ServiceItemType>
 
 const STORAGE_KEY: string = 'itemDB'
 
