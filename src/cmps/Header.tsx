@@ -17,7 +17,7 @@ function Header() {
         <div className="header-logo">Logo</div>
         <nav className="header-nav">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/store">Store</NavLink>
+          <NavLink to="/shop">Shop</NavLink>
           <NavLink to="/about">About</NavLink>
         </nav>
         <div className="header-login">
